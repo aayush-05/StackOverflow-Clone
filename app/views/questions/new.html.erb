@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10 center-row">
+      <h1 class="mt-5">Ask a Question</h1>
+    </div>
+  </div> <br>
+  <div class="row">
+    <div class="col-6 center-row">
+      <%= form_with(scope: @question, method: :post, local: true, url: user_questions_path(current_user)) do |form| %>
+        <div class="form-group text-left">
+          <h6><%= form.label :heading %></h6>
+          <%= form.text_field :heading, class: "form-control form-input" %>
+        </div>
+        <div class="form-group text-left">
+          <h6><%= form.label :tags_list %></h6>
+          <%= form.text_field :tags_list, class: "form-control form-input" %>
+        </div>
+        <div class="form-group text-left">
+          <h6><%= form.label :description %></h6>
+          <%= form.text_field :description, class: "form-control form-input" %>
+        </div>
+        <div class="form-group text-left">
+          <%= form.submit "Post Question", class: "btn btn-success" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
