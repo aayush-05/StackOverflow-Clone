@@ -11,10 +11,9 @@ A web application enabling users to ask questions and get their doubts resolved 
 
 1. Clone the repository `git clone https://github.com/aayush-05/StackOverflow-Clone.git`
 2. Move into project folder `cd StackOverflow-Clone`
-3. Open command prompt/terminal and run `pip install -r requirements.txt` to install all the dependencies.
-4. Install bundler `gem install bundler` and then install dependencies `bundle install`
-5. Create database `rails db:create` and run migrations `rails db:migrate`
-6. Finally run the application at `127.0.0.1:3000` using `rails server`
+3. Install bundler `gem install bundler` and then install dependencies `bundle install`
+4. Create database `rails db:create` and run migrations `rails db:migrate`
+5. Finally run the application at `127.0.0.1:3000` using `rails server`
 
 ## Screenshots
 
